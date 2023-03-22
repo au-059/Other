@@ -32,7 +32,9 @@ bool prime(int number)
 {
     // Checking whether the number is divisible by any number between 1 and itself without a reminder
     // And if so, it is not a prime number, thus return false
-    for (int i = 2; i < number; i++)
+    
+    int i;
+    for (i = 2; i < number; i++)
     {
         if (number % i == 0)
         {
